@@ -629,3 +629,67 @@
 .admin-places__wrapper-item-block-check img {
     width: 40%;
 }
+
+
+
+/* ------------------------------------------------------------- */
+
+.admin-gallery__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.admin-gallery__wrapper-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    flex: 0 0 440px;
+}
+
+.admin-gallery__wrapper-item-img {
+    width: 195px;
+    min-width: 195px;
+    height: 230px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.admin-gallery__wrapper-item-img img {
+    height: 100%;
+}
+
+.admin-gallery__wrapper-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin-gallery__wrapper-item-content-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.admin-gallery__wrapper-item-content-btns * {
+    width: 180px;
+
+    font-size: 16px;
+}
+
+.admin-gallery__wrapper-item-content-headers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-gallery__wrapper-item-content-headers h2 {
+    font-size: 18px;
+}
+
+.admin-gallery__wrapper-item-content-headers p {
+    font-size: 14px;
+}
