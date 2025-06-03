@@ -1,0 +1,455 @@
+/* 1. Base header styles (as before) */
+.header--b__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding-top: 15px;
+}
+
+.header--b-admin * {
+    color: var(--white) !important;
+}
+
+.header--b__wrapper input {
+    /* keep your existing input styles */
+    width: 100%;
+    max-width: 400px;
+    height: 52px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 2px solid #5771fc;
+    font-weight: 300;
+    font-size: 20px;
+    color: #5771fc;
+    padding-left: 20px;
+}
+
+.header--b__wrapper input::placeholder {
+    color: #5771fc;
+}
+
+.header--b__wrapper-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    max-width: 1100px;
+
+    background: linear-gradient(90deg, #5471fe 0%, #fb86a0 100%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    padding: 15px 0;
+    padding-left: calc((100% - 1740px) / 2);
+    padding-right: 50px;
+}
+
+.header--b-admin .header--b__wrapper-nav {
+    padding: 43px 0;
+    padding-left: calc((100% - 1740px) / 2);
+    padding-right: 50px;
+}
+
+.header--b-admin .header--b__wrapper-nav>a:last-of-type {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.header--b__wrapper-nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+.header--b__wrapper-nav ul li a {
+    font-size: 22px;
+}
+
+.logo--desktop {
+    display: block;
+    width: 100px;
+}
+
+.user--desktop {
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user--desktop img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 2. Hamburger button base styles */
+.hamburger {
+    display: none;
+    /* Показать только на мобильных */
+    background: linear-gradient(90deg, #ff5cb8, #8241b8);
+    border: none;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    width: 90px;
+    height: 60px;
+    padding: 0;
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger__line {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px auto;
+    border-radius: 2px;
+}
+
+/* 3. Mobile brand container (logo + avatar) */
+.mobile-brand {
+    display: none;
+    /* Показывать только на мобильных */
+    background: linear-gradient(90deg, #ff5cb8, #8241b8);
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    padding: 6px 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+.mobile-brand .logo img {
+    width: 50px;
+    height: auto;
+}
+
+.mobile-brand .user {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.mobile-brand .user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-brand {
+    display: none;
+}
+
+@media (max-width: 1740px) {
+    .header--b__wrapper-nav {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .header--b__wrapper input {
+        width: 100%;
+        max-width: 250px;
+        margin-right: 10px;
+    }
+
+    .header--b__wrapper-nav {
+        padding-right: 20px;
+    }
+
+    .header--b__wrapper-nav ul {
+        gap: 15px;
+    }
+}
+
+/* 4. Responsive: Mobile breakpoint (max-width: 480px) */
+@media (max-width: 900px) {
+    .header--b__wrapper {
+        /* Переключаем flex для мобильного вида */
+        justify-content: space-between;
+        padding: 0 12px;
+        gap: 10px;
+    }
+
+    /* Скрыть desktop-меню и поиск */
+    .header--b__wrapper-nav,
+    .header--b__wrapper input {
+        display: none;
+    }
+
+    /* Показать гамбургер-кнопку */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Показать logo + avatar вместе */
+    .mobile-brand {
+        display: flex;
+    }
+
+    .header--b__wrapper {
+        padding: 0;
+        padding-top: 15px;
+    }
+}
+
+/* 5. Very small screens (max-width: 320px) */
+@media (max-width: 320px) {
+    .hamburger {
+        width: 50px;
+        height: 36px;
+    }
+
+    .hamburger__line {
+        width: 20px;
+        height: 2px;
+        margin: 3px auto;
+    }
+
+    .mobile-brand {
+        padding: 4px 10px;
+        gap: 8px;
+    }
+
+    .mobile-brand .logo img {
+        width: 70px;
+    }
+
+    .mobile-brand .user {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+/* ------------------------------------------------------------- */
+
+
+.title-div {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* 4. Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 75px;
+    /* Базовая высота строки */
+    gap: 16px;
+}
+
+/* 5. Card Base Styles */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 5.1 Card Span Modifiers */
+/* Карточка, занимающая 2 строки */
+.card--span-rows-2 {
+    grid-row: span 2;
+}
+
+.card--span-rows-3 {
+    grid-row: span 3;
+}
+
+.card--span-rows-4 {
+    grid-row: span 4;
+}
+
+/* Карточка, занимающая 2 столбца */
+.card--span-cols-2 {
+    grid-column: span 2;
+}
+
+/* Карточка с отзывом */
+.card--testimonial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    color: #000000;
+}
+
+/* Аватар в отзыве */
+.testimonial__avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Текст отзыва */
+.testimonial__text {
+    margin-left: 12px;
+}
+
+.testimonial__text h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.testimonial__text p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* 6. Responsive Breakpoints */
+
+/* Изменить базовую высоту ряда на меньших экранах для плотности */
+@media (max-width: 1440px) {
+    .gallery {
+        grid-auto-rows: 130px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 120px;
+    }
+
+    /* Перераспределение span-ов под меньшие разрешения */
+    .card--span-cols-2 {
+        grid-column: span 2;
+    }
+
+    .card--span-rows-2 {
+        grid-row: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 90px;
+    }
+
+    .page-title {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+    }
+
+    .search-input {
+        display: none;
+        /* Скрыть строку поиска на очень узких экранах */
+    }
+}
+
+/* 7. Tower Fallback (для самого маленького экрана) */
+@media (max-width: 320px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 120px;
+    }
+
+    .card--span-cols-2,
+    .card--span-rows-2 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+}
+
+
+/* ------------------------------------------------------------- */
+
+
+.admin-app {
+    padding-top: 35px;
+}
+
+.admin-app h1 {
+    color: var(--back);
+}
+
+.admin-app__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.admin-app__wrapper-item {
+    flex: 0 0 calc(25% - (120px / 4));
+
+    border: 2px solid #5771fc;
+    border-radius: 10px;
+
+    padding: 20px 25px;
+}
+
+.admin-app__wrapper-item-block {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.admin-app__wrapper-item-block>div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.admin-app__wrapper-item-btns {
+    display: flex;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.admin-app__wrapper-item-btns button:first-of-type {
+    flex: 0 0 calc(40% - 5px);
+}
+
+.admin-app__wrapper-item-btns button:last-of-type {
+    flex: 0 0 calc(60% - 5px);
+}
+
+.admin-app__wrapper-item-btns button {
+    font-size: 16px;
+}
