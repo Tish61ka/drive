@@ -799,3 +799,81 @@
 .admin-reviews__wrapper-item-content-footer>div p {
     line-height: 80%;
 }
+
+
+
+/* ------------------------------------------------------------- */
+
+.admin-reviews-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: color-mix(in srgb, black, transparent 30%);
+    backdrop-filter: blur(20px);
+}
+
+.admin-reviews-modal.active {
+    display: flex;
+}
+
+.admin-reviews-modal__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 950px;
+
+    background-color: var(--white);
+    border-radius: 20px;
+
+    padding: 20px 45px;
+}
+
+.admin-reviews-modal__wrapper h3 {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.07em;
+}
+
+.admin-reviews-modal__wrapper textarea {
+    height: 160px;
+
+    box-shadow: 3px 7px 10px 2px rgba(0, 0, 0, 0.25);
+    background: var(--white);
+    border-radius: 20px;
+
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+.admin-reviews-modal__wrapper>div {
+    display: flex;
+    gap: 12px;
+}
+
+.admin-reviews-modal__wrapper button {
+    border-radius: 20px;
+    background-color: var(--pink);
+
+    font-size: 24px;
+    color: var(--white);
+
+    padding: 16px 40px;
+}
+
+.admin-reviews-modal__wrapper button:last-of-type {
+    background-color: #5771fc;
+
+}
