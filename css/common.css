@@ -93,6 +93,14 @@ a>img {
     padding: 0 10px;
 }
 
+.container-small {
+    width: 100%;
+    max-width: 1360px;
+
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 .section {
     padding-top: 100px;
 }
@@ -127,10 +135,17 @@ a>img {
     color: var(--white);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
 
     .title {
-        font-size: 36px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .title {
+        font-size: 20px;
     }
 }
 
