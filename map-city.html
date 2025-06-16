@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drive – City Mosaic</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header--b">
+        <div class="header--b__wrapper">
+            <button class="hamburger" aria-label="Меню">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+
+            <div class="mobile-brand">
+                <a href="/" class="logo">
+                    <img src="images/logo.png" alt="Drive Logo">
+                </a>
+                <a href="#" class="user">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                </a>
+            </div>
+
+            <!-- Desktop navigation (hidden on mobile) -->
+            <div class="header--b__wrapper-nav">
+                <a href="/" class="logo--desktop">
+                    <img src="images/logo.png" alt="Drive Logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Карта</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Страница мест</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="user--desktop">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <button class="open-bars">Свернуть каталог</button>
+
+        <section class="map">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac5b4d78158dfcfbc15ce1d276ebceaca581e2b230ea009826e861d38b3f8066b&amp;source=constructor"
+                width="100%" height="100%" frameborder="0"></iframe>
+        </section>
+
+        <section class="city">
+            <div class="city__wrapper">
+                <div class="city__wrapper-content">
+                    <h1>Астрахань</h1>
+                    <p>Какое- то описание города Какое- то описание города Какое- то описание города Какое- то
+                        описание города Какое- то
+                        описание города Какое- то описание города Какое- то описание города Какое- то описание
+                        города Какое- то описание города
+                        Какое- то описание города Какое- то описание города Какое- то описание города</p>
+                </div>
+                <div class="city__wrapper-imgs">
+                    <h2>Фотографии</h2>
+                    <div>
+                        <img src="images/profile-shop-test.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/profile-shop-test-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
