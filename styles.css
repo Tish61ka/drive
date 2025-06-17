@@ -2785,6 +2785,33 @@ body:has(.map) {
     border-radius: 10px;
 }
 
+.city__wrapper>span {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+
+    font-size: 35px;
+    color: var(--white);
+    line-height: 1;
+
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+@media (max-width: 1750px) {
+    .city__wrapper {
+        padding-top: 150px;
+    }
+
+    .city {
+        z-index: 1;
+    }
+
+    .city__wrapper>span {
+        top: 135px;
+    }
+}
+
 @media (max-width: 1400px) {
     .open-bars {
         top: 130px;
@@ -2807,6 +2834,34 @@ body:has(.map) {
     .bars__wrapper {
         padding-top: 30px;
         padding-left: 20px;
+    }
+
+    .city__wrapper {
+        padding-top: 100px;
+    }
+
+    .city__wrapper>span {
+        top: 85px;
+    }
+}
+
+@media (max-width: 650px) {
+    .city__wrapper {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .city__wrapper-content.bar-content p {
+        font-size: 16px;
+    }
+
+    .city__wrapper-content-desc>div {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .city__wrapper-content-desc>div * {
+        width: 100% !important;
     }
 }
 
