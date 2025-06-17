@@ -2531,6 +2531,68 @@ html:has(.login) {
     border-radius: 10px;
 }
 
+.profile-shop-main__wrapper--content-img .swiper-slide {
+    height: 100%;
+}
+
+@media (max-width: 1000px) {
+    .profile-shop-main__wrapper--content {
+        flex-direction: column;
+    }
+
+    .profile-shop-main__wrapper--content-img {
+        align-self: center;
+    }
+
+    .profile-shop-main__wrapper--content-block {
+        width: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+
+    .profile-shop-main__wrapper--content-img {
+        min-width: 1px;
+        width: 215px;
+        height: 257px;
+    }
+
+    .profile-shop-main__wrapper--content-block-other,
+    .profile-shop-main__wrapper--content-block-info {
+        display: contents;
+    }
+
+    .profile-shop-main__wrapper--content-block {
+        gap: 30px;
+    }
+
+    .profile-shop-main__wrapper--content-block-other-gallery {
+        order: 1;
+    }
+
+    .profile-shop-main__wrapper--content-block-info div {
+        order: 2;
+    }
+
+    .profile-shop-main__wrapper--content-block-info p {
+        order: 3;
+    }
+
+    .profile-shop-main__wrapper--content-block-other button {
+        order: 4;
+    }
+
+    .profile-shop-main__wrapper--content-img-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile-shop-main__wrapper--content-img-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 .map {
     position: absolute;
     top: 0;
