@@ -2563,6 +2563,7 @@ html:has(.login) {
     cursor: pointer;
 }
 
+
 body:has(.map) {
     overflow-y: hidden;
 }
@@ -2782,4 +2783,45 @@ body:has(.map) {
     height: 100%;
 
     border-radius: 10px;
+}
+
+@media (max-width: 1400px) {
+    .open-bars {
+        top: 130px;
+    }
+
+    .bars__wrapper {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 900px) {
+    .open-bars {
+        top: 85px;
+    }
+
+    .bars {
+        right: 10px;
+    }
+
+    .bars__wrapper {
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .bars__wrapper-item {
+        flex-direction: column;
+    }
+
+    .bars__wrapper-item-img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .bars__wrapper-item-img img {
+        height: auto;
+    }
 }
