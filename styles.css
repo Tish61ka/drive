@@ -3235,7 +3235,7 @@ main:has(.profile) {
     .profile__wrapper-content {
         flex-direction: row;
 
-        height: calc(100% - 331px);
+        height: calc(100% - 350px);
     }
 
     .profile__wrapper-content-btns {
@@ -3657,5 +3657,95 @@ main:has(.profile) {
     .profile-add-modal-form-content {
         width: 100%;
         max-width: 360px;
+    }
+}
+
+.profile__wrapper-content-main-places {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile__wrapper-content-main-places h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile__wrapper-content-main-places-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.profile__wrapper-content-main-places-content-item {
+    display: flex;
+    gap: 13px;
+}
+
+.profile__wrapper-content-main-places-content-item-img {
+    width: 121px;
+    height: 164px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.profile__wrapper-content-main-places-content-item-img img {
+    height: 100%;
+}
+
+.profile__wrapper-content-main-places-content-item-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.profile__wrapper-content-main-places-content-item-txt>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile__wrapper-content-main-places-content-item-txt>div h3 {
+    font-size: 18px;
+}
+
+.profile__wrapper-content-main-places-content-item-txt>div p {
+    max-width: 195px;
+    width: 195px;
+
+    font-size: 14px;
+}
+
+.profile__wrapper-content-main-places-content-item-txt>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.profile__wrapper-content-main-places-content-item-txt>ul li {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    .profile__wrapper-content-main-places-content-item {
+        flex-direction: column;
+
+        width: 100%;
+
+        padding-right: 10px;
+    }
+
+    .profile__wrapper-content-main-places-content-item-img {
+        width: 100%;
+        height: 95px;
+    }
+
+    .profile__wrapper-content-main-places-content-item-txt>div p {
+        width: auto;
+        max-width: 1000px;
     }
 }
