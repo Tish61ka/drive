@@ -499,8 +499,8 @@
             </div>
         </section>
 
-        <div class="profile-edit-modal">
-            <div class="profile-edit-modal__wrapper">
+        <div class="profile-edit-modal default-modal">
+            <div class="default-modal__wrapper">
                 <div class="modal-header">
                     <div>
                         <img src="images/logo.png" alt="">
@@ -546,6 +546,32 @@
             </div>
         </div>
 
+        <div class="profile-add-modal default-modal">
+            <div class="default-modal__wrapper">
+                <div class="modal-header">
+                    <div>
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <p>Отмена</p>
+                </div>
+                <div class="profile-add-modal-form">
+                    <input type="file" id="profile-add-modal-form-file">
+                    <label for="profile-add-modal-form-file">
+                        <div>
+                            <div>
+                                <img src="images/upload.svg" alt="">
+                            </div>
+                            <p>Загрузить файл</p>
+                        </div>
+                    </label>
+                    <div class="profile-add-modal-form-content">
+                        <label for="">Добавить описание</label>
+                        <textarea required placeholder="Расскажите о месте, где было сделано ваше фото"></textarea>
+                        <button>Добавить фото</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>

@@ -3319,7 +3319,7 @@ main:has(.profile) {
     }
 }
 
-.profile-edit-modal {
+.default-modal {
     position: absolute;
     top: 0;
     left: 0;
@@ -3336,11 +3336,11 @@ main:has(.profile) {
     z-index: 100;
 }
 
-.profile-edit-modal.active {
+.default-modal.active {
     display: flex;
 }
 
-.profile-edit-modal__wrapper {
+.default-modal__wrapper {
     display: flex;
     flex-direction: column;
     gap: 65px;
@@ -3390,11 +3390,13 @@ main:has(.profile) {
     padding: 0 30px;
 }
 
-.profile-edit-modal__wrapper-form>input {
+.profile-edit-modal__wrapper-form>input,
+.profile-add-modal-form>input {
     display: none;
 }
 
-.profile-edit-modal__wrapper-form>label {
+.profile-edit-modal__wrapper-form>label,
+.profile-add-modal-form>label {
     display: flex;
 
     width: 153px;
@@ -3409,7 +3411,8 @@ main:has(.profile) {
     padding: 12px 10px;
 }
 
-.profile-edit-modal__wrapper-form>label>div {
+.profile-edit-modal__wrapper-form>label>div,
+.profile-add-modal-form>label>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3423,7 +3426,8 @@ main:has(.profile) {
     border-radius: 10px;
 }
 
-.profile-edit-modal__wrapper-form>label>div>div {
+.profile-edit-modal__wrapper-form>label>div>div,
+.profile-add-modal-form>label>div>div {
     width: 32px;
 }
 
@@ -3577,4 +3581,81 @@ main:has(.profile) {
 
 .profile__wrapper-content-main-images>label>div>div {
     width: 32px;
+}
+
+.profile-add-modal-form {
+    display: flex;
+    gap: 60px;
+    align-self: center;
+
+    width: 100%;
+
+    padding: 30px;
+}
+
+.profile-add-modal-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: calc(100% - 213px);
+}
+
+.profile-add-modal-form-content label {
+    font-weight: 400;
+    font-size: 24px;
+    color: #f5f5f5;
+}
+
+.profile-add-modal-form-content textarea {
+    width: 100%;
+    height: 140px;
+
+    border-radius: 15px;
+    background-color: var(--white);
+
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--back);
+
+    resize: none;
+    padding-left: 16px;
+    padding-top: 10px;
+}
+
+.profile-add-modal-form-content textarea::placeholder {
+    color: #eda3f9;
+}
+
+.profile-add-modal-form-content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 172px;
+    height: 41px;
+
+    border-radius: 50px;
+    background: #5b71fa;
+
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width:600px) {
+    .profile-add-modal-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .profile-add-modal-form-content button {
+        align-self: center;
+    }
+
+    .profile-add-modal-form-content {
+        width: 100%;
+        max-width: 360px;
+    }
 }
