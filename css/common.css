@@ -53,9 +53,9 @@ a>img {
 /* для кнопок */
 
 .trans {
-    transition: 400ms;
-    -webkit-transition: 400ms;
-    -moz-transition: 400ms;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
 }
 
 .default-anim-a {
@@ -102,7 +102,7 @@ a>img {
 }
 
 .section {
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .wrapper {

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drive – City Mosaic</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header--b">
+        <div class="header--b__wrapper">
+            <button class="hamburger" aria-label="Меню">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+
+            <div class="mobile-brand">
+                <a href="/" class="logo">
+                    <img src="images/logo.png" alt="Drive Logo">
+                </a>
+                <a href="#" class="user">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                </a>
+            </div>
+
+            <!-- Desktop navigation (hidden on mobile) -->
+            <div class="header--b__wrapper-nav">
+                <a href="/" class="logo--desktop">
+                    <img src="images/logo.png" alt="Drive Logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Карта</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Страница мест</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="user--desktop">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                </a>
+            </div>
+
+            <input type="search" placeholder="поиск">
+        </div>
+    </header>
+
+    <main>
+
+        <section class="profile section">
+            <div class="profile-img">
+                <img src="images/profile-img-1.png" alt="">
+            </div>
+            <div class="profile__wrapper container">
+                <div class="profile__wrapper-info">
+                    <div class="profile__wrapper-info-img">
+                        <img src="images/profile-shop-test.jpg" alt="">
+                    </div>
+                    <div class="profile__wrapper-info-content">
+                        <div class="profile__wrapper-info-content-info">
+                            <h1>Анастасия Павлова</h1>
+                            <p><span>Был(-а) в сети 21.08.2025</span></p>
+                            <p>Возраст: <span>28</span></p>
+                            <p>Пол: <span>Жен.</span></p>
+                        </div>
+                        <div class="profile__wrapper-info-content-btns">
+                            <button class="alt">Редактировать профиль</button>
+                            <button>Удалить аккаунт</button>
+                            <button>Создать заведение</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="profile__wrapper-btn">Выход</button>
+                <div class="profile__wrapper-content">
+                    <div class="profile__wrapper-content-btns">
+                        <div class="trans active">Избранное</div>
+                        <div class="trans">Отзывы</div>
+                        <div class="trans">Фотографии</div>
+                        <div class="trans">Мои места</div>
+                    </div>
+                    <div class="profile__wrapper-content-main">
+                        <div class="profile__wrapper-content-main-favorite">
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                            <div class="profile__wrapper-content-main-favorite-item">
+                                <div class="profile__wrapper-content-main-favorite-item-img">
+                                    <img src="images/profile-shop-test-2.jpg" alt="">
+                                    <div>
+                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.7637 3.28277C7.89259 -2.81051 0.0576172 0.508913 0.0576172 7.14653C0.0576172 12.1309 10.7989 19.9277 11.7637 20.9416C12.7351 19.9277 22.9422 12.1309 22.9422 7.14653C22.9422 0.559235 15.642 -2.81051 11.7637 3.28277Z"
+                                                fill="#5871FC" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="profile__wrapper-content-main-favorite-item-content">
+                                    <h2>Хоппер</h2>
+                                    <p>ул. Ленина, 18/28</p>
+                                    <p>Средний чек: 1000-2000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile__wrapper-img">
+                <img src="images/profile-img-2.png" alt="">
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
