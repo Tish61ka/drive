@@ -4048,6 +4048,7 @@ main:has(.shop-registr) {
 .shop-registr__wrapper-content-btn {
     display: flex;
     justify-content: center;
+    gap: 20px;
     flex: 1 0 100%;
 }
 
@@ -4062,6 +4063,10 @@ main:has(.shop-registr) {
     font-weight: 700;
     font-size: 16px;
     text-align: center;
+}
+
+.shop-registr__wrapper-content-btn>button:last-of-type {
+    background-color: var(--pink);
 }
 
 @media (max-width: 1150px) {
@@ -4130,5 +4135,11 @@ main:has(.shop-registr) {
 
     .shop-registr__wrapper-content-info-wrap-select span {
         order: 3;
+    }
+
+    .shop-registr__wrapper-content-btn {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
