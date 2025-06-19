@@ -3384,7 +3384,7 @@ main:has(.profile) {
 }
 
 .default-modal {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -4141,5 +4141,118 @@ main:has(.shop-registr) {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+}
+
+.profile-shop-modal .default-modal__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 800px;
+
+    overflow-y: auto;
+}
+
+.profile-shop-modal__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 0 100px;
+}
+
+.profile-shop-modal__wrapper-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.profile-shop-modal__wrapper-list h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--white)
+}
+
+.profile-shop-modal__wrapper-list>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.profile-shop-modal__wrapper-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+    width: 100%;
+    max-width: 300px;
+}
+
+.profile-shop-modal__wrapper-list-item input,
+.profile-shop-modal__wrapper-list-item textarea {
+    height: 52px;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #5771fc;
+
+    font-family: var(--font7);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--back);
+
+    padding-left: 25px;
+}
+
+.profile-shop-modal__wrapper-list-item input::placeholder,
+.profile-shop-modal__wrapper-list-item textarea::placeholder {
+    color: #5771fc;
+}
+
+.profile-shop-modal__wrapper-list-item textarea {
+    width: 100%;
+    height: 128px;
+
+    padding-top: 14px;
+}
+
+.profile-shop-modal__wrapper-list-item>input {
+    width: 100%;
+}
+
+.profile-shop-modal__wrapper-list-item div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-shop-modal__wrapper-list-item div input {
+    width: 105px;
+
+    padding-right: 5px;
+}
+
+.profile-shop-modal__wrapper-list-item div button {
+    width: 171px;
+    height: 41px;
+
+    border: 1px solid #5771fc;
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #5771fc;
+}
+
+@media (max-width: 900px) {
+    .profile-shop-modal__wrapper {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .profile-shop-modal__wrapper-list-item {
+        max-width: 10000px;
     }
 }
