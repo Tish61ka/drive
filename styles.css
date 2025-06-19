@@ -277,7 +277,61 @@
     justify-content: center;
 }
 
-.card img {
+.card-comment {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    gap: 8px;
+
+    background: #5871fb;
+    border-radius: 20px;
+
+    padding: 17px;
+    padding-bottom: 20px;
+}
+
+.card-comment-img {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.card-comment-img>div {
+    width: 50px;
+    height: 50px;
+}
+
+.card-comment-img>div img {
+    height: 100%;
+
+    border-radius: 50%;
+}
+
+.card-comment-img span {
+    color: var(--white);
+    font-size: 14px;
+}
+
+.card-comment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-comment-content h2 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #f5f5f7;
+}
+
+.card-comment-content p {
+    font-size: 14px;
+    color: var(--white);
+}
+
+.card>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -385,6 +439,16 @@
     .search-input {
         display: none;
         /* Скрыть строку поиска на очень узких экранах */
+    }
+
+    .card-comment {
+        flex-direction: column;
+    }
+
+    .card-comment-img {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
     }
 }
 
