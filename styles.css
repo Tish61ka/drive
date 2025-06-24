@@ -1005,6 +1005,7 @@ body:has(.map) header:has(.header--b__wrapper-nav nav +a) .header--b__wrapper-na
     background-image: url('/images/shop-back.jpg');
     background-position: center center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 section.shop {

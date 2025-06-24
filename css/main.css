@@ -615,4 +615,8 @@
     .main__wrapper-headers-head h1 {
         font-size: 20px;
     }
+
+    .main__wrapper-btns a {
+        font-size: 12px;
+    }
 }
