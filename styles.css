@@ -1162,6 +1162,8 @@ section.shop {
 
     padding: 74px 54px;
     padding-top: 20px;
+
+    z-index: 10;
 }
 
 .shop-filter h3 {
