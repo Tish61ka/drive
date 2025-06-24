@@ -2913,7 +2913,7 @@ body:has(.map) {
 
 .bars {
     position: relative;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-left: 40px;
     padding-right: 10px;
 
@@ -3156,6 +3156,15 @@ body:has(.map) {
     cursor: pointer;
 }
 
+.city:has(.bars) h1 {
+    font-weight: 400;
+    font-size: 36px;
+    color: #f5f5f5;
+
+    margin-left: 40px;
+    transform: translateY(64px);
+}
+
 @media (max-width: 1750px) {
     .city__wrapper {
         padding-top: 150px;
@@ -3167,6 +3176,14 @@ body:has(.map) {
 
     .city__wrapper>span {
         top: 135px;
+    }
+
+    .bars {
+        padding-top: 150px;
+    }
+
+    .city:has(.bars) h1 {
+        transform: translateY(135px);
     }
 }
 
@@ -3183,10 +3200,6 @@ body:has(.map) {
 @media (max-width: 900px) {
     .open-bars {
         top: 85px;
-    }
-
-    .bars {
-        right: 10px;
     }
 
     .bars__wrapper {
@@ -3227,6 +3240,10 @@ body:has(.map) {
     .bars__wrapper {
         padding-right: 20px;
     }
+
+    .bars {
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 470px) {
@@ -3242,6 +3259,10 @@ body:has(.map) {
 
     .bars__wrapper-item-img img {
         height: auto;
+    }
+
+    .city:has(.bars) h1 {
+        transform: translateY(155px);
     }
 }
 
