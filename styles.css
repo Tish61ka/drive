@@ -2912,13 +2912,28 @@ body:has(.map) {
 }
 
 .bars {
-    position: absolute;
-    top: 150px;
-    right: 95px;
+    position: relative;
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 10px;
 
     width: 100%;
-    max-width: 510px;
-    height: calc(100% - 151px);
+    /* max-width: 510px; */
+    height: calc(100%);
+}
+
+.bars__wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.bars__wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.bars__wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--pink);
+    border-radius: 50px;
+    border: none;
 }
 
 .bars__wrapper {
@@ -2932,7 +2947,7 @@ body:has(.map) {
     overflow-x: hidden;
     overflow-y: auto;
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 80px;
 }
 
 .bars__wrapper-item {
@@ -3208,7 +3223,13 @@ body:has(.map) {
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width:550px) {
+    .bars__wrapper {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 470px) {
     .bars__wrapper-item {
         flex-direction: column;
     }
