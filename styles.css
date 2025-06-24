@@ -74,6 +74,30 @@
     font-size: 22px;
 }
 
+body:has(.map) .header--b__wrapper-nav nav {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 600px;
+    width: 100%;
+}
+
+body:has(.map) .header--b__wrapper-nav nav ul {
+    width: 100%;
+    justify-content: space-between;
+}
+
+body:has(.map) header:has(.header--b__wrapper-nav nav +a) .header--b__wrapper-nav nav {
+    display: block;
+    width: auto;
+    max-width: 100000px;
+}
+
+
+body:has(.map) header:has(.header--b__wrapper-nav nav +a) .header--b__wrapper-nav nav ul {
+    justify-content: flex-start;
+    width: auto;
+}
+
 .logo--desktop {
     display: block;
     width: 100px;
@@ -275,6 +299,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
+}
+
+.card:hover .card-comment {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+
+    opacity: 1;
 }
 
 .card-comment {
@@ -290,6 +324,15 @@
 
     padding: 17px;
     padding-bottom: 20px;
+
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+
+    opacity: 0;
 }
 
 .card-comment-img {
@@ -948,6 +991,13 @@
 
 }
 
+.shop-list {
+    display: none;
+}
+
+.shop-list:has(li) {
+    display: block;
+}
 
 /* ------------------------------------------------------------- */
 

@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
 }
 
-body.admin-body {
+body:has(.admin-body) {
     background-color: var(--white);
 }
 
